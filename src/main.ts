@@ -18,24 +18,27 @@ persona.comer(comidaLista);*/
 const persona1 : Persona = new Persona("Edwin","Loza");
 const persona2 : Persona = new Persona("Gloria", "Garzón");
 
-const hijo1 : Hijo = new Hijo("Mago","Merlin");
-const hijo2 : Hijo = new Hijo("Tsubasa","Ózora");
+const hijo1 : Hijo = new Hijo("David","Loza");
+const hijo2 : Hijo = new Hijo("Daniel","Loza");
+const hijo3 : Hijo = new Hijo("Mickel","Loza");
 
-//const abuelo1 : Abuelo = new Abuelo("Anciano","Loza");
+const datosAbuelo : Abuelo = new Abuelo("Deifilio","Garzón");
 
 const hijos : Hijo[] = [];
 hijos.push(hijo1);
 hijos.push(hijo2);
+hijos.push(hijo3);
+
+persona1.hijitos(hijos);
+persona2.hijitos(hijos);
 
 const personas : Persona [] = [];
 personas.push(persona1);
 personas.push(persona2);
-
-persona1.hijitos(hijos);
 console.log(persona1);
+console.log(persona2);
 console.log("");
 
-const todo : Persona[]=[];
+datosAbuelo.todasPersonas(personas);
 
-const abuelo : Abuelo = new Abuelo();
-abuelo.todasPersonas(hijos,personas);
+console.log(datosAbuelo);
