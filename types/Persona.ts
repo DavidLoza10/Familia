@@ -1,9 +1,9 @@
 import {Hijo} from "./Hijo";
 
 export class Persona {
-    private _nombre : string;
-    private _apellido : string;
-    private _hijos : Hijo[] = [];
+    private _nombre : string; // = "David"
+    private _apellido : string // = "Loza";
+    private _hijos : Hijo[] = []; // [hijo1, hijo2]
 
     constructor(nombre : string, apellido : string) {
         this._nombre = nombre;
@@ -13,6 +13,10 @@ export class Persona {
     get hijos(): Hijo[] { return this._hijos; }
 
     set hijos(value: Hijo[]) { this._hijos = value; }
+
+    public hijitos (hijos : Hijo[]) : void{
+        this._hijos = hijos;
+    }
 
     public quieroComer() : string{
         return "Hamburguesa";

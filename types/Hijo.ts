@@ -1,4 +1,5 @@
 export class Hijo {
+
     private _nombre : string;
     private _apellido : string;
 

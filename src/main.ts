@@ -15,8 +15,8 @@ const comidaLista : string = servicioDelivery.recibePedido(pedido);
 
 persona.comer(comidaLista);*/
 
-const persona1 : Persona = new Persona("David","Loza");
-const persona2 : Persona = new Persona("Edwin", "Garzón");
+const persona1 : Persona = new Persona("Edwin","Loza");
+const persona2 : Persona = new Persona("Gloria", "Garzón");
 
 const hijo1 : Hijo = new Hijo("Mago","Merlin");
 const hijo2 : Hijo = new Hijo("Tsubasa","Ózora");
@@ -30,6 +30,10 @@ hijos.push(hijo2);
 const personas : Persona [] = [];
 personas.push(persona1);
 personas.push(persona2);
+
+persona1.hijitos(hijos);
+console.log(persona1);
+console.log("");
 
 const todo : Persona[]=[];
 
